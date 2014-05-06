@@ -1,10 +1,16 @@
 body {background: darkslategrey;}
+.hidden {display:none;}
 h1.title{
 width:100%;
 font-family: sans-serif;
 font-size: 60px;
 font-weight: 200;
 text-align: center;
+}
+.content{
+width: 500px;
+margin: auto;
+margin-top: 400px;
 }
 #logos {
 position:absolute;  top: 200px;  left: 42%;

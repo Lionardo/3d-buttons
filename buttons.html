@@ -17,15 +17,28 @@
         <img class="front" src="images/logo-divio.png" id="front" alt="divio">
     </div>
 </div>
+<div class="content hidden">
+    <h3>Some text</h3>
+    <p>Etiam ac tempor lacus. Aenean tristique laoreet leo.
+        Nunc euismod, mauris sed hendrerit tincidunt, justo orci viverra nunc, nec suscipit erat
+        ante quis magna. Vivamus vitae lorem augue. Fusce pharetra rutrum tellus, non suscipit arcu.
+        Praesent tincidunt, tortor in hendrerit tempor, tortor arcu lacinia turpis,
+        auctor blandit leo velit accumsan arcu. Nulla quis tellus quis magna fermentum volutpat.
+        Etiam sit amet risus imperdiet, scelerisque ante sit amet, fringilla enim. Fusce imperdiet,
+        arcu eu placerat placerat, felis velit gravida ligula, eget ullamcorper neque magna vel turpis.
+    </p>
+</div>
 <script type='text/javascript'>
 $(document).ready(function(event){
     event.preventDefault;
     $('.back').click(function(){
         $('#cube').removeClass('shift-front');
+        $('.content').removeClass('hidden');
         $('#cube').addClass('shift-back');
     });
     $('.front').click(function(){
         $('#cube').addClass('shift-front');
+        $('.content').addClass('hidden');
         $('#cube').removeClass('shift-back');
     });
 });
