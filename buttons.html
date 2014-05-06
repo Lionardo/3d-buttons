@@ -14,7 +14,10 @@
         <div class="top"></div>
         <div class="down"></div>
         <img class="back" src="images/logo-aldryn.png"  id="back" alt="aldryn">
-        <img class="front" src="images/logo-divio.png" id="front" alt="divio">
+        <img class="front" src="images/yes.png" id="front" alt="divio">
+        <div class="crank">
+        <iframe width="200" height="113" src="http://www.youtube.com/embed/3ZC_v0wKJf8" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </div>
 <div class="content hidden">
@@ -35,11 +38,13 @@ $(document).ready(function(event){
         $('#cube').removeClass('shift-front');
         $('.content').removeClass('hidden');
         $('#cube').addClass('shift-back');
+        $('.crank').addClass('crankshow');
     });
     $('.front').click(function(){
         $('#cube').addClass('shift-front');
         $('.content').addClass('hidden');
         $('#cube').removeClass('shift-back');
+        $('.crank').removeClass('crankshow');
     });
 });
 </script>

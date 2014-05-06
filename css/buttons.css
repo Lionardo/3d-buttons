@@ -12,8 +12,22 @@ width: 500px;
 margin: auto;
 margin-top: 400px;
 }
+.crank{
+position: absolute;
+top: 40px;
+-webkit-transform: rotateY(90deg);
+-webkit-transition: 1sec;
+}
+.crankshow{
+-webkit-animation: focus 2s;
+-webkit-animation-fill-mode:both;
+}
+@-webkit-keyframes focus{
+0% { -webkit-transform: rotateY(0deg) rotateZ(0) ;}
+100% { -webkit-transform: rotateY(180deg) translateX(-300px);}
+}
 #logos {
-position:absolute;  top: 200px;  left: 42%;
+position:absolute;  top: 200px;  left: 44%;
 -webkit-perspective: 1000px;
 perspective: 1000px;
 -webkit-perspective-origin: 50% -10%;
@@ -30,7 +44,7 @@ transform: rotateX(0) rotateY(0) rotateZ(0);
 .right{
 background: black;
 opacity:0.5;
-border: 2px solid black;
+border: 1px solid black;
 position: absolute;  height: 200px;  width: 200px;
 -webkit-transform:  rotateY(270deg) translateZ(100px);
 backface-visibility: hidden;
@@ -38,7 +52,7 @@ backface-visibility: hidden;
 .left {
 background: black;
 opacity:0.5;
-border: 2px solid black;
+border: 1px solid black;
 position: absolute;  height: 200px;  width: 200px;
 -webkit-transform:  rotateY(90deg) translateZ(100px);
 backface-visibility: hidden;
@@ -46,7 +60,7 @@ backface-visibility: hidden;
 .down{
 background: black;
 opacity:0.5;
-border: 2px solid black;
+border: 1px solid black;
 position: absolute;  height: 200px;  width: 200px;
 -webkit-transform:  rotateX(270deg) translateZ(100px);
 backface-visibility: hidden;
@@ -54,13 +68,13 @@ backface-visibility: hidden;
 .top {
 background: black;
 opacity:0.5;
-border: 2px solid black;
+border: 1px solid black;
 position: absolute;  height: 200px;  width: 200px;
 -webkit-transform:  rotateX(90deg) translateZ(100px);
 backface-visibility: hidden;
 }
 #back {
-border: 2px solid black;
+border: 1px solid black;
 position: absolute;  height: 200px;  width: 200px;
 -webkit-backface-visibility: hidden;
 -webkit-transform:  translateZ(100px);
@@ -68,7 +82,7 @@ backface-visibility: hidden;
 transform:  translateZ(100px);
 }
 #front {
-border: 2px solid black;
+border: 1px solid black;
 position: absolute;  height: 200px;  width: 200px;
 -webkit-backface-visibility: hidden;
 -webkit-transform:  rotateY(180deg) translateZ(100px);
